@@ -5,8 +5,11 @@
   for more info on Angular 2 Components.
 -->
 
-<ion-card *ngFor="let t of text">
+<ion-card *ngFor="let text of texts">
   <ion-card-content>
-    {{t}}
+
+    <p text-right *ngIf="!text.isQuestion">{{text.text}}</p>
+    <p *ngIf="text.isQuestion">{{text.text}}</p>
+
   </ion-card-content>
 </ion-card>

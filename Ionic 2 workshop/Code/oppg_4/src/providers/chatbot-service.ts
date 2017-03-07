@@ -11,12 +11,12 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class ChatbotService {
-    private questionAndAnswerEmitter = new ReplaySubject<string>(1);
+    private questionAndAnswerEmitter = new ReplaySubject<{ text: string, isQuestion: boolean }>(1);
     constructor(public http: Http) {
     }
 
     ask(question: string) {
-        this.questionAndAnswerEmitter.next(question);
+        this.questionAndAnswerEmitter.next({ text: question, isQuestion: true });
         const params = new URLSearchParams();
         params.append('unikId', 'testId1');
         params.append('text', question);
@@ -26,7 +26,7 @@ export class ChatbotService {
             })
             .map(response => {
                 const answer = response.text();
-                this.questionAndAnswerEmitter.next(answer);
+                this.questionAndAnswerEmitter.next({ text: answer, isQuestion: false });
                 return answer;
             });
     }
@@ -34,5 +34,4 @@ export class ChatbotService {
     getAnswers() {
         return this.questionAndAnswerEmitter.asObservable();
     }
-
 }

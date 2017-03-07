@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatContentComponent implements OnInit {
 
-    text: string[] = [];
+    texts: { text: string, isQuestion: boolean }[] = [];
 
     constructor(private service: ChatbotService) {
     }
@@ -21,6 +21,6 @@ export class ChatContentComponent implements OnInit {
     ngOnInit() {
         this.service
             .getAnswers()
-            .subscribe(text => this.text.push(text));
+            .subscribe(text => this.texts.push(text));
     }
 }
