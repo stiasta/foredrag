@@ -1,0 +1,16 @@
+<!--
+  Generated template for the ChatInput component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<form (ngSubmit)="onAsk()">
+    <ion-item>
+        <ion-label>Chat: </ion-label>
+        <ion-input type="text" [(ngModel)]="inputText" name="input_text"></ion-input>
+
+        <ion-icon item-right><button ion-button clear>Ask</button></ion-icon>
+    </ion-item>
+
+</form>

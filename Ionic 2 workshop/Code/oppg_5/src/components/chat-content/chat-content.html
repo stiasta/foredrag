@@ -1,0 +1,15 @@
+<!--
+  Generated template for the ChatContent component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-card *ngFor="let text of texts">
+  <ion-card-content>
+
+    <p text-right *ngIf="!text.isQuestion">{{text.text}}</p>
+    <p *ngIf="text.isQuestion">{{text.text}}</p>
+
+  </ion-card-content>
+</ion-card>

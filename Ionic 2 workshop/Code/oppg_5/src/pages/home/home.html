@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Chat
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (mousedown)="start()" (mouseup)="end()" (touchstart)="start()" (touchend)="end()">
+        <ion-icon name="mic" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg" padding>
+  <chat-content></chat-content>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <chat-input></chat-input>
+  </ion-toolbar>
+</ion-footer>
