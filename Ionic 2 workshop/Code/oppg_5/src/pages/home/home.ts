@@ -24,7 +24,7 @@ export class HomePage {
                         .startListening({ language: 'nb-NO' })
                         .subscribe(matches => {
                             if (matches && matches.length > 0) {
-                                this.service.ask(matches[0]);
+                                this.service.ask(matches[0]).subscribe();
                             }
                         });
                 } else {
