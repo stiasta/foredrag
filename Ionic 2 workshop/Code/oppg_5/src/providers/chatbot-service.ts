@@ -21,7 +21,7 @@ export class ChatbotService {
         params.append('unikId', 'testId1');
         params.append('text', question);
         return this.http
-            .get('http://10.0.0.217:81/api/ElseChat', {
+            .get('https://else-api-test.sticos.no/api/ElseChat', {
                 search: params
             })
             .map(response => {
