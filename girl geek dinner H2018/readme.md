@@ -7,6 +7,9 @@ Google's Dialogflow is the chat bot technology of choice in this tutorial.
 ## Prerequisites:   
 - Google Account
 
+## Task
+Add intents so that the chatbot user can exit the room.
+
 ## Setup
 1. Go to [Dialogflow.com](https://dialogflow.com/)
 2. Click *sign up for free*
@@ -21,3 +24,5 @@ Google's Dialogflow is the chat bot technology of choice in this tutorial.
 7. Click *Export and *Import*
 8. Download the premade data by clicking this link.
 9. Click *import from zip* and upload the premade data.
+
+## 
