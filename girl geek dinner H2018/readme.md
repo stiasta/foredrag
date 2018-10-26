@@ -1,7 +1,6 @@
 # Make Your Own Chatbot!
 
 This short tutorial will guide you through making your very own text based game inside a chat bot.
-The game is a short *Escape room* game, where you have to pick up stuff and try to escape the door.
 Google's Dialogflow is the chat bot technology of choice in this tutorial.
 
 ## Prerequisites:   
