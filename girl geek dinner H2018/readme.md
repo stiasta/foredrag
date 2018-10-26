@@ -27,5 +27,7 @@ Add intents so that the chatbot user can exit the room.
 ## Tasks
 ### Using pre built agents from Google
 #### Support
+1. go to the prebuilt agent section and find the agent called support
 
 #### Flights
+1. go to the prebuilt agent section and find the agent called flights
