@@ -24,10 +24,69 @@ Add intents so that the chatbot user can exit the room.
 8. Download the premade data by clicking this link.
 9. Click *import from zip* and upload the premade data.
 
+## Guided tour around Dialogflow
+0. Assumption: you have a new and clean agent.
+
+##### Import prebuilt agent
+1. Click *prebuild agents*
+2. Import the *coffe shop* agent
+
+##### Creating new intent
+> An *intent* is a collection of phrases from the users mapped to responses.
+
+3. Click the *intents* menu point
+4. Click *create intent*
+5. Add a the name "definition of affogato"
+
+> A *training phrase* is an example of input that the user might want to write to hit this intent.
+6. Add *training phrases*
+    - what is the definition of affogato?
+    - what is the definition of an affogato?
+    - what is an affogato?
+    - what is affogato?
+    - affogato
+
+> A response is the answer that the chat bot gives the user if he/she hits this intent.
+7. Scroll down and add *responses*
+    - An affogato (Italian for "drowned") is an Italian coffee-based dessert. It usually takes the form of a scoop of vanilla gelato or ice cream topped or "drowned" with a shot of hot espresso.
+
+> Context is used to remember things from earlier in the dialog.
+8. Scroll back up and add output context
+    - text should be definition_of_coffe
+    - click the number and set the timeout to 1
+9. click *save* 
+    - when you see the button turn green the intent should be saved and the test chat is ready.
+
+##### Testing the new intent
+10. To the far right of the site there is a *try it now* field.
+    - click field and type in "affogato"
+    - the output should then be the response added to the intent and a output context with a timeout of 1.
+
+##### Adding a follow up intent
+11. To follow up the previous affogato intent we can now create a new intent
+    - click the *+* button next to the *intents* menu point.
+12. Add the name "definition of karsk"
+13. Add input context 
+    - text should be "definition_of_coffee"
+    - there should also be an output context with the same text.
+14. Add training phrases
+    - how about karsk?
+    
+15. Add response 
+    - "Karsk is a Norwegian cocktail from the Trøndelag region containing coffee together with moonshine and sometimes a spoon of sugar."
+16. click save and test it in the chat.
+
+##### 
+
+    
 ## Tasks
 ### Using pre built agents from Google
 #### Support
 1. go to the prebuilt agent section and find the agent called support
+    - Click import
 
 #### Flights
 1. go to the prebuilt agent section and find the agent called flights
+    - Click import
+
+####
