@@ -76,8 +76,15 @@ Add intents so that the chatbot user can exit the room.
     - "Karsk is a Norwegian cocktail from the Trøndelag region containing coffee together with moonshine and sometimes a spoon of sugar."
 16. click save and test it in the chat.
 
-##### 
-
+##### Adding a entities
+> An entity is used to identify and pull out information from a phrase.
+17. Click the *entities* menu point.
+18. Click the *@dring* entity
+19. Add a new row to the bottom
+    - Name: Lemonade
+    - Values: Lemonade, Lemon juice, citrus juice
+20. save and try it out the chat by typing
+    - can i have a citrus juice.
     
 ## Tasks
 ### Using pre built agents from Google
