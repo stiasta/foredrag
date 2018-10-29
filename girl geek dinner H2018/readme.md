@@ -87,13 +87,31 @@ Add intents so that the chatbot user can exit the room.
     - can i have a citrus juice.
     
 ## Tasks
+#### Collecting contact information
+Purpose: Hand out t-shirts after collecting contact information.
+
+
 ### Using pre built agents from Google
 #### Support
 1. go to the prebuilt agent section and find the agent called support
     - Click import
-
+    
 #### Flights
-1. go to the prebuilt agent section and find the agent called flights
-    - Click import
+Setup: Go to the prebuilt agent section and find the agent called flights and click import
+Task:
+Expand the features of this chatbot by:
+1. adding a way to order parking
+    - It should be possible to order parking inside or outside
+    - if its inside there should be a way to order a car wash as well.
+2. order a rental car
+    - how many days?
+    - what type of car? (large, medium, small, sport)
+    - what color?
+    - with or without childrens seat.
+    
 
-####
+#### Jokes
+Purpose: Create knock knock jokes!
+1. Create a knock knock joke where the bot asks knock knock
+2. Flip it around! Create a dialog where the *user* asks, knock knock and the bot joins in answering whos there... etc. (hint: can this be done with 1 intent?)
+3. Expand task 1. by adding a variation of knock knock jokes.
