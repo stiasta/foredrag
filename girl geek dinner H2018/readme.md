@@ -87,14 +87,22 @@ Add intents so that the chatbot user can exit the room.
     - can i have a citrus juice.
     
 ## Tasks
+### Using pre built agents from Google
 #### Collecting contact information
 Purpose: Hand out t-shirts after collecting contact information.
+1. Create an intent that starts the dialog
+    - add training data with questions ex. "i want a free t-shirt!"
+2. Create an intent that collects contact information after the previous intent has triggered the dialog.
+3. create parameters for first and last name, e-mail and phone number (use system defined entities). All parameters are required.
+4. Add norwegian names and email in the phrases. Connect them to entities if they are not defined. Norwegian first names can be connected to @sys.given-name
+5. After the information have been collected, thank the user and say the t-shirt is sent.
 
-
-### Using pre built agents from Google
 #### Support
-1. go to the prebuilt agent section and find the agent called support
-    - Click import
+Setup: Go to the prebuilt agent section and find the agent called support and click import
+1. Let the user report a bug
+2. Ask if the bug is serious
+3. ask if the user has a work around.
+4. fill out the answers on the other intents.
     
 #### Flights
 Setup: Go to the prebuilt agent section and find the agent called flights and click import
@@ -108,10 +116,20 @@ Expand the features of this chatbot by:
     - what type of car? (large, medium, small, sport)
     - what color?
     - with or without childrens seat.
-    
-
+       
 #### Jokes
+Setup: Go to the prebuilt agent section and find the agent called jokes and click import
 Purpose: Create knock knock jokes!
 1. Create a knock knock joke where the bot asks knock knock
 2. Flip it around! Create a dialog where the *user* asks, knock knock and the bot joins in answering whos there... etc. (hint: can this be done with 1 intent?)
 3. Expand task 1. by adding a variation of knock knock jokes.
+
+#### Tourism
+Setup: Go to the prebuilt agent section and find the agent called Tourism and click import
+1. Add answers on the intents that are added
+2. Expand the bot to handle Norwegian places
+
+#### FAQ
+Setup: Go to the prebuilt agent section and find the agent called FAQ and click import
+1. create your own FAQ bot! 
+2. You can use the prebuild agent for referance
