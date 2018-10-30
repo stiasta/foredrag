@@ -79,7 +79,7 @@ Add intents so that the chatbot user can exit the room.
 ##### Adding a entities
 > An entity is used to identify and pull out information from a phrase.
 17. Click the *entities* menu point.
-18. Click the *@dring* entity
+18. Click the *@drink* entity
 19. Add a new row to the bottom
     - Name: Lemonade
     - Values: Lemonade, Lemon juice, citrus juice
