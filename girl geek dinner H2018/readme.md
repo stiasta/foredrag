@@ -133,22 +133,3 @@ Setup: Go to the prebuilt agent section and find the agent called Tourism and cl
 Setup: Go to the prebuilt agent section and find the agent called FAQ and click import
 1. create your own FAQ bot! 
 2. You can use the prebuild agent for referance
-
-### Importing prebuilt game
-This task is a bit tricky since a chatbot without a backend is not really designed to play games.
-
-Setup: 
-- create a new agent
-- go to agent settings (cog next to agent name)
-- go to import/export
-- download the zip from this link [https://github.com/stiasta/foredrag/raw/master/girl%20geek%20dinner%20H2018/hr_sjefen.zip](https://github.com/stiasta/foredrag/raw/master/girl%20geek%20dinner%20H2018/hr_sjefen.zip)
-- click import from zip
-- go to intents menu
-- start the game dialog by saying start in the chat
-- the game is incomplete and ends when when the user enters the elevator with the flash light
-
-Task: Finish the story by having the user find the lost lunch box. Use your own imagination.
-
-1. Finish the "click button" intent with response and context so that you dont suddenly fall back earlier in the story.
-2. Create intents with input and output context that follows a story line. Perhaps you meet someone that you have to collect some information from?
-
