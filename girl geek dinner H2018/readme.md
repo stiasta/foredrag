@@ -48,7 +48,7 @@ Add intents so that the chatbot user can exit the room.
 
 > Context is used to remember things from earlier in the dialog.
 8. Scroll back up and add output context
-    - text should be definition_of_coffe
+    - text should be definition_of_coffee
     - click the number and set the timeout to 1
 9. click *save* 
     - when you see the button turn green the intent should be saved and the test chat is ready.
