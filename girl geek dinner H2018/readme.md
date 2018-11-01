@@ -141,7 +141,7 @@ Setup:
 - create a new agent
 - go to agent settings (cog next to agent name)
 - go to import/export
-- download the zip from this link (https://github.com/stiasta/foredrag/raw/master/girl%20geek%20dinner%20H2018/hr_sjefen.zip)[https://github.com/stiasta/foredrag/raw/master/girl%20geek%20dinner%20H2018/hr_sjefen.zip]
+- download the zip from this link [https://github.com/stiasta/foredrag/raw/master/girl%20geek%20dinner%20H2018/hr_sjefen.zip](https://github.com/stiasta/foredrag/raw/master/girl%20geek%20dinner%20H2018/hr_sjefen.zip)
 - click import from zip
 - go to intents menu
 - start the game dialog by saying start in the chat
