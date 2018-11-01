@@ -19,10 +19,6 @@ Add intents so that the chatbot user can exit the room.
     - Give the agent a name
     - Use English as default langauge. (Note: Norwegian is also a selection, but since we have used English in the premade data this should be used)
     - Click *create*
-6. Go to *agent settings* by clicking the cog just under the Dialogflow logo in the left menu.
-7. Click *Export and *Import*
-8. Download the premade data by clicking this link.
-9. Click *import from zip* and upload the premade data.
 
 ## Guided tour around Dialogflow
 0. Assumption: you have a new and clean agent.
